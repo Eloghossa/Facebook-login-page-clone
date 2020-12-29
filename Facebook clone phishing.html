@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lan="en-US">
+	<head>
+		<title>Facebook login</title>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1">
+				<style>
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+*{
+margin:0px;
+padding:0px;
+}	
+	body {
+		background-image:url(/storage/emulated/0/Pictures/Screenshot/Screenshot_20200922-211323.png);
+}
+	/*my header*/
+	header {
+	background:#1877f2;
+	color:#fff;
+	padding:10px 5px;
+	}
+	header h2 {
+	font-size:18px;
+	font-weight:normal;
+	}
+	
+	
+	header .top{
+	width:850px
+	margin:0px auto;
+	}
+
+form {
+  background: rgba(255, 255, 255, .7);
+  color:rgba(0, 0, 0, .8);
+  border-top: 0px solid rgba(255, 255, 255, .7);
+  border-right: 1px solid rgba(255, 255, 255, .7);
+  border-bottom: 0px solid rgba(255, 255, 255, .7);
+  border-left: 1px solid rgba(255, 255, 255, .7);
+  box-shadow: 0 3rem 5rem -2rem rgba(255, 255, 255, .1);
+  margin: 10px auto;
+  max-width: 380px;
+  padding: 0px 0px 0px;
+}
+
+h4 {
+  color: #fff;
+  margin-bottom: 
+}
+.input-container {
+	margin-bottom: 5px;
+	font-size:17px;
+	font-weight:450;
+  	position: relative;
+ 	 width: 100%;
+  
+}
+
+.input-group {
+  margin-bottom: 5px;
+  font-size:17px;
+  font-weight:450;
+  position: relative;
+  width: 100%;
+   }
+
+input
+ {
+  -webkit-appearance: none;
+  border:2.4px solid rgba(0, 95, 240, .2);
+  background-color:rgba(211, 211, 211, .2);
+  border-radius: 1px;
+  box-sizing:border-box;
+  margin:4px;
+  font-size: 1.25em;
+  height: 45px;
+  width:349px;
+  padding:.3em;
+}
+.input-group input {
+ 
+  -webkit-appearance: none;
+  border:2px solid rgba(185, 185, 185, .7);
+  background-color:rgba(211, 211, 211, .2);
+  border-radius:1px;
+  box-sizing:border-box;
+  margin:4px;
+  font-size: 1.25em;
+  height:45px;
+  width:349px;
+  padding:.3em; 
+}
+span {
+position:absolute;
+right:15px;
+top:49.5%;
+cursor:pointer;
+}
+.material-icons {
+position:absolute;
+}
+.btn {
+ background-color:rgba(0,95,240,.7);
+ color:rgba(255, 255, 255, .9);
+ font-size:15px;
+  margin-top: .45em;
+  border:none;
+  margin:3px;
+  height:45px;
+  width:351px;
+}
+p {
+font-size:18px;
+font-weight:449;
+color:rgba(0,95,215,.8);
+margin:1px;
+margin-bottom:10px;
+}
+ 
+ .or {
+	display:block;
+	width: 85%;
+	height: 1px;
+	border-bottom: 1.39px solid #dee3e9;
+	position: relative;
+	margin: 27px 25px;
+}
+
+ .or:before
+{
+	content: 'or';
+	width: 35px;
+	height: 18px;
+	position: absolute;
+	top: 0px;
+	right: calc(60% - 40px);
+	background-color: #fff;
+	text-align: center;
+	font-size:18px;
+	font-weight:520;
+	line-height: 10px;
+	color: #555
+}
+
+.button{
+background-color:rgba(0,135,0,.7);
+color:#fff;
+border:none;
+margin-left:70px;
+font-size:18px;
+font-weight:500;
+margin-top:.001cm;
+height:45px;
+width:201px;
+}
+				</style>
+		</head>
+<body>
+		<header>
+	<div class="top">
+		<h2 align="center">Facebook</h2>
+		</header>
+		<form align="">
+		<div class="input-container">
+    		 <label for="txtMobileNumberOrEmail"> &nbsp;Mobile number or email</label>
+    		 <input type="text" class="form-control" name="txtUserName" />
+     	 </div>
+ 	 </div>
+      
+      <div class="input-group"> 
+     <label for="txtPassword"> &nbsp;Password</label>
+	  <input type="password" />
+	  <span class="material-icons visibility"> visibility_off </span>
+      </div>
+      
+      <button class="btn btn-lg btn-primary btn-block"><h3>Log In</h3></button>
+ </form>
+  
+ 		 <p>&nbsp; Forgot Password?</p>
+
+
+<div class="or"></div>
+
+<button class="button">Create New Account</button>
+<div>
+<div> <br><p> &nbsp;&nbsp;&nbsp; English (UK) </p> </div>
+ <br><p> &nbsp;&nbsp;&nbsp; Hausa </p>
+ <br><p> &nbsp;&nbsp;&nbsp; Français (France)</p>
+ <br><p> &nbsp;&nbsp;&nbsp;ﺍﻟﻌﺮﺑﻴﺔ </p>
+ <br><p> &nbsp;&nbsp;&nbsp; More Languages...</p>
+</div>
+<script type="text/javascript">
+const visibilityToggle = document.querySelector('.visibility');
+
+const input = document.querySelector('.input-group input');
+
+var password = true;
+
+visibilityToggle.addEventListener('click', function (){
+	if (password){
+		input.setAttribute('type', 'text');
+		visibilityToggle.innerHTML = 'visibility';
+	} else {
+		input.setAttribute('type', 'password');
+		visibilityToggle.innerHTML = 'visibility_off';
+	}
+
+	password = !password;
+
+});
+</script>
+
+	</body>
+</html>
